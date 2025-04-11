@@ -1,0 +1,51 @@
+.categories-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there are too many items */
+    gap: 20px; /* Add spacing between items */
+    justify-content: space-around; /* Distribute items evenly */
+  }
+  
+.category-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; /* Set a fixed width for each card */
+    text-align: left;
+    background-color: #faf4f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: black;
+}
+
+.category-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

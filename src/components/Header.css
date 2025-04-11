@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f7ede3;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 90px;
+}
+
+.header-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.header__title {
+    margin: 0;
+    color: #343a40;
+}
