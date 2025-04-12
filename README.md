@@ -1,6 +1,6 @@
 # Expense Tracker Frontend
 
-Projeto MVP desenvolvido durante a Sprint 3 do curso de Pós-Graduação em Desenvolvimento Full Stack da PUC-Rio Digital. Este repositório contém o frontend da aplicação, desenvolvido em React com Vite. O backend da aplicação está disponível em um repositório separado: [Expense Tracker API](https://github.com/ismaelfarias/api-expense-tracker).
+Projeto MVP desenvolvido durante a Sprint 3 do curso de Pós-Graduação em Desenvolvimento Full Stack da PUC-Rio Digital. Foi implementado o **Cenário 1** proposto, que consiste em uma aplicação com Interface (Frontend), API (Backend) e consulta a API externa diretamente pelo Frontend. Este repositório contém o frontend da aplicação, desenvolvido em React com Vite. O backend da aplicação está disponível em um repositório separado: [Expense Tracker API](https://github.com/ismaelfarias/api-expense-tracker).
 
 ## Sobre o Projeto
 
