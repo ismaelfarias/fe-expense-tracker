@@ -19,6 +19,44 @@ A aplicação fornece uma interface intuitiva para gerenciamento de finanças pe
 - **Auth0**: Sistema de autenticação e autorização
 - **CSS Modules**: Estilização modular dos componentes
 
+## Autenticação com Auth0
+
+### Sobre o Auth0
+O Auth0 é uma plataforma de autenticação e autorização que oferece:
+- Plano gratuito com até 7.500 usuários ativos
+- Múltiplos métodos de autenticação
+- SDK para React e outras tecnologias
+- Interface customizável para login/cadastro
+
+### Configuração Necessária
+
+1. Criar uma conta gratuita em [Auth0](https://auth0.com/)
+2. Criar uma nova aplicação Single Page Application
+3. Configurar URLs permitidas:
+   - Allowed Callback URLs: `http://localhost:5173`
+   - Allowed Logout URLs: `http://localhost:5173`
+   - Allowed Web Origins: `http://localhost:5173`
+
+### Rotas Protegidas
+As seguintes rotas requerem autenticação:
+- `/` - Página inicial
+- `/expenses` - Gerenciamento de despesas
+- `/incomes` - Gerenciamento de receitas
+- `/categories` - Gerenciamento de categorias
+
+### Fluxo de Autenticação
+1. Usuário acessa a aplicação
+2. Redirecionamento para login do Auth0 se não autenticado
+3. Após autenticação bem-sucedida, redirecionamento para a aplicação
+4. Token JWT armazenado para requisições subsequentes
+
+### Funcionalidades Implementadas
+- Login com email/senha
+- Login com Google (opcional)
+- Logout
+- Proteção de rotas
+- Persistência de sessão
+
 ## Arquitetura da Solução
 
 A aplicação frontend se comunica com uma API RESTful separada (expense-tracker-api), desenvolvida em **Python** com **FastAPI**, e utiliza o **Auth0** para gerenciamento de autenticação e autorização de usuários.
