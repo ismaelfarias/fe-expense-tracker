@@ -88,7 +88,7 @@ Para construir e executar o container:
 docker build -t expense-tracker-frontend .
 
 # Executar o container
-docker run -p 5173:5173 expense-tracker-frontend
+docker run -e AUTH0_DOMAIN=seu-dominio.auth0.com -e AUTH0_CLIENT_ID=seu-client-id -p 5173:80 expense-tracker-frontend
 ```
 
 Ou usando Docker Compose:
