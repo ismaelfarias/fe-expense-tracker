@@ -3,49 +3,57 @@
     flex-wrap: wrap; /* Allow wrapping if there are too many items */
     gap: 20px; /* Add spacing between items */
     justify-content: space-around; /* Distribute items evenly */
-  }
+}
   
 .category-card {
-    border: 1px solid #ccc;
+    border: 1px solid #d8c8bb;
     padding: 10px;
     border-radius: 5px;
     width: 200px; /* Set a fixed width for each card */
     text-align: left;
-    background-color: #faf4f0;
+    background-color: #f7ede3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s; /* Smooth transition for hover effect */
+    transition: all 0.3s ease;
     cursor: pointer; /* Change cursor to pointer on hover */
-    color: black;
+    color: #343a40;
+}
+
+.category-card:hover {
+    background-color: #f1e4d5;
+    transform: translateY(-2px);
 }
 
 .category-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .edit-button,
 .delete-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .edit-button {
-  background-color: #ffc107;
-  color: #212529;
+    background-color: #d8c8bb;
+    color: #343a40;
 }
 
 .delete-button {
-  background-color: #dc3545;
-  color: white;
+    background-color: #d8c8bb;
+    color: #343a40;
 }
 
 .edit-button:hover {
-  background-color: #e0a800;
+    background-color: #e7dfd5;
+    transform: translateY(-1px);
 }
 
 .delete-button:hover {
-  background-color: #c82333;
+    background-color: #e7dfd5;
+    transform: translateY(-1px);
 }

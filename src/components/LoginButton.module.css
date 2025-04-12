@@ -1,25 +1,23 @@
-.add-button {
-    display: flex;
-    background-color: #d8c8bb;
+.loginButton {
+    background-color: #e9d5c4;
     color: #343a40;
     border: none;
+    padding: 8px 16px;
     border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 0.9rem;
     cursor: pointer;
+    margin-top: 1.5rem;
     transition: all 0.3s ease;
-    margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  }
   
-.add-button:hover {
-    background-color: #e7dfd5;
+  .loginButton:hover {
+    background-color: #f1e4d5;
     transform: translateY(-1px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  }
   
-.add-button:active {
-    background-color: #f1e4d5;
+  .loginButton:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  }

@@ -1,6 +1,10 @@
 import "./WelcomeMessage.css";
+import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from './LoginButton';
 
 const WelcomeMessage = () => {
+    const { isAuthenticated } = useAuth0();
+
     return (
         <div className="welcome-container">
             <h1 className="welcome-title">Bem-vindo ao Expense Tracker!</h1>
@@ -33,6 +37,9 @@ const WelcomeMessage = () => {
                 Faça do Expense Tracker o seu aliado para transformar hábitos financeiros e alcançar seus sonhos.
                 Pronto para começar sua jornada rumo ao controle financeiro? Vamos lá! 🚀
             </p>
+            {!isAuthenticated && (
+                <LoginButton />
+            )}
         </div>
     );
 }

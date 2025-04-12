@@ -5,7 +5,7 @@
     justify-content: center;
     padding: 20px 20px;
     text-align: center;
-    background-color: #faf4f0;
+    background-color: #f7ede3;
     border-radius: 8px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@
 }
 
 .welcome-text {
-    color: #495057;
+    color: #343a40;
     font-size: 1.2rem;
     line-height: 1.6;
     max-width: 800px;
@@ -36,26 +36,27 @@
 }
 
 .feature-card {
-    background-color: white;
+    background-color: #faf4f0;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    background-color: #f1e4d5;
 }
 
 .feature-title {
-    color: #212529;
+    color: #343a40;
     font-size: 1.25rem;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 .feature-description {
-    color: #6c757d;
+    color: #343a40;
     font-size: 1rem;
     line-height: 1.5;
 }

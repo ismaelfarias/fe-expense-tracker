@@ -1,12 +1,31 @@
-# React + Vite
+# Expense Tracker FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto MVP desenvolvido durante a terceira Sprint do curso de Pós-Graduação em Desenvolvimento Full Stack da PUC-Rio Digital, com o objetivo de explorar a implentação de Sistema composto por Front-End, BackEnd 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalação
 
-## Expanding the ESLint configuration
+```
+$ npm install 
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Como executar
+
+```
+$ npm run dev
+```
+
+### Como executar através do Docker
+
+
+### TODO
+Incluir  as funcionalidades principais
+tecnologias utilizadas no desenvolvimento
+explicar brevemente a estrutura de pastas e responsabilidades
+Incluir informações sobre objetivo do projeto 
+Desenho de arquitetura 
+Dockercompose
+
+RELATÓRIOS
+
+PLANEJAMENTO
