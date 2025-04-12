@@ -73,6 +73,14 @@ const Expenses = () => {
         return;
       }
 
+      const expenseData = {
+        name: newExpense.name,
+        description: newExpense.description,
+        amount: Number(newExpense.amount),
+        date: newExpense.date,
+        category_id: Number(newExpense.category) || null
+      };
+
       const response = await fetch('http://localhost:8000/expenses/', {
         method: 'POST',
         headers: {
@@ -80,7 +88,7 @@ const Expenses = () => {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache'
         },
-        body: JSON.stringify(newExpense),
+        body: JSON.stringify(expenseData),
       });
 
       if (!response.ok) {
@@ -118,6 +126,14 @@ const Expenses = () => {
         return;
       }
 
+      const expenseData = {
+        name: newExpense.name,
+        description: newExpense.description,
+        amount: Number(newExpense.amount),
+        date: newExpense.date,
+        category_id: Number(newExpense.category) || null
+      };
+
       const response = await fetch(`http://localhost:8000/expenses/${editingExpense.id}`, {
         method: 'PUT',
         headers: {
@@ -125,7 +141,7 @@ const Expenses = () => {
           'Cache-Control': 'no-cache',
           'Pragma': 'no-cache'
         },
-        body: JSON.stringify(newExpense),
+        body: JSON.stringify(expenseData),
       });
 
       if (!response.ok) {
