@@ -1,0 +1,109 @@
+.form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0; /* Adjust based on your header height */
+  box-sizing: border-box;
+  z-index: 1001; /* Higher than header's z-index */
+}
+
+.form-container {
+  background-color: #f7ede3;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  max-height: calc(100vh - 180px); /* Subtract header + footer height + padding */
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #343a40;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #343a40;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #d8c8bb;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #343a40;
+  background-color: #faf4f0;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-fields input,
+.form-fields textarea {
+  padding: 8px;
+  border: 1px solid #d8c8bb;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #faf4f0;
+}
+
+.form-fields textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-buttons button:first-child {
+  background-color: #d8c8bb;
+  color: #343a40;
+}
+
+.form-buttons button:first-child:hover {
+  background-color: #e7dfd5;
+}
+
+.form-buttons button:last-child {
+  background-color: #d8c8bb;
+  color: #343a40;
+}
+
+.form-buttons button:last-child:hover {
+  background-color: #e7dfd5;
+}

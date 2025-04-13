@@ -1,0 +1,66 @@
+.categories-page {
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there are too many items */
+    gap: 20px; /* Add spacing between items */
+    justify-content: space-around; /* Distribute items evenly */
+}
+  
+.category-card {
+    border: 1px solid #d8c8bb;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px; /* Set a fixed width for each card */
+    text-align: left;
+    background-color: #f7ede3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #343a40;
+}
+
+.category-card:hover {
+    background-color: #f1e4d5;
+    transform: translateY(-2px);
+}
+
+.category-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-button {
+    background-color: #d8c8bb;
+    color: #343a40;
+}
+
+.delete-button {
+    background-color: #d8c8bb;
+    color: #343a40;
+}
+
+.edit-button:hover {
+    background-color: #e7dfd5;
+    transform: translateY(-1px);
+}
+
+.delete-button:hover {
+    background-color: #e7dfd5;
+    transform: translateY(-1px);
+}

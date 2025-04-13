@@ -1,0 +1,84 @@
+.incomes-page {
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.incomes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.income-card {
+  border: 1px solid #d8c8bb;
+  padding: 15px;
+  border-radius: 5px;
+  width: 250px;
+  text-align: left;
+  background-color: #f7ede3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #343a40;
+}
+
+.income-card:hover {
+  background-color: #f1e4d5;
+  transform: translateY(-2px);
+}
+
+.income-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.income-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #d8c8bb;
+  color: #343a40;
+  transition: all 0.3s ease;
+}
+
+.income-actions button:hover {
+  background-color: #e7dfd5;
+  transform: translateY(-1px);
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: #dc3545;
+  margin: 10px 0;
+}

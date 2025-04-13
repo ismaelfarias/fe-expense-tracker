@@ -1,0 +1,117 @@
+#root {
+  background-color: #faf4f0;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #212529;
+  background-color: #faf4f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #343a40;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #343a40;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #343a40;
+}
+h4 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #343a40;
+}
+h5 {
+  font-size: 1rem;
+  margin: 0;
+  color: #343a40;
+}
+h6 {
+  font-size: 0.875rem;
+  margin: 0;
+  color: #343a40;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f7ede3;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #343a40;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  color: #121416;
+  transition: color 0.3s ease;
+  background-color: #e7dfd5;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style for the LogoutButton to ensure it stays on the right */
+.navbar > button {
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #d8c8bb;
+  border: none;
+  border-radius: 4px;
+  color: #343a40;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar > button:hover {
+  background-color: #e7dfd5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar > button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li {
+  list-style: none;
+}
