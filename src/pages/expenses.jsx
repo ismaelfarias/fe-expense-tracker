@@ -194,16 +194,11 @@ const Expenses = () => {
         {expenses.map((expense) => (
           <div className="expense-card" key={expense.id}>
             <strong>Name:</strong> {expense.name} <br />
-            <strong>Amount:</strong> ${expense.amount} <br />
+            <strong>Amount:</strong> ${expense.amount.toFixed(2)} <br />
             <strong>Date:</strong> {new Date(expense.date).toLocaleDateString()} <br />
             <strong>Category:</strong> {
-              categories.find(cat => cat.id === expense.category)?.name || 'Uncategorized'
+              categories.find(cat => cat.id === expense.category_id)?.name || 'Uncategorized'
             } <br />
-            {expense.description && (
-              <>
-                <strong>Description:</strong> {expense.description} <br />
-              </>
-            )}
             <div className="expense-actions">
               <button className="edit-button" onClick={() => handleEditExpense(expense)}>
                 Edit
